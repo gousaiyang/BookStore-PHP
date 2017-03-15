@@ -1,2 +1,9 @@
-# Bookstore-v1
-Simple Online Bookstore (Version 1)
+# Simple Online Bookstore (Version 1)
+
+## Front End
+
+jQuery + Bootstrap
+
+## Back End
+
+Laravel Framework
