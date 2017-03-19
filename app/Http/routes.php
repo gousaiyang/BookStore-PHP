@@ -12,8 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('/book', 'BookController@getAllBooks');
+Route::post('/book/add', 'BookController@addBook');
+Route::post('/book/update', 'BookController@updateBook');
+Route::post('/book/delete', 'BookController@deleteBook');
+
+Route::get('/order', 'OrderController@getAllOrders');
+
+Route::get('/user', 'UserController@getAllUsers');
+Route::post('/user/add', 'UserController@addUser');
+Route::post('/user/update', 'UserController@updateUser');
+Route::post('/user/delete', 'UserController@deleteUser');
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +38,6 @@ Route::get('/', function () {
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});
+/*Route::group(['middleware' => ['web']], function () {
+    
+});*/
